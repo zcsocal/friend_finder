@@ -1,3 +1,6 @@
+
+
+//The data will come from friends.js
 var friends = require("../data/friends.js");
 
 

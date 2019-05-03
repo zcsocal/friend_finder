@@ -1,3 +1,7 @@
+
+//This is just a basic set of data arrays for friend matches
+//Note that the survey answers are an array within an array of data.
+
 var friends = [
 
     {

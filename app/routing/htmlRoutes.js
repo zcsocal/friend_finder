@@ -1,3 +1,5 @@
+
+//Path is required to make this app work.
 var path = require("path");
 
 

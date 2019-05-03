@@ -14,29 +14,42 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+       
     </head>
 
     <body>
 
         <div class="container">
+            <div class="jumbotron">
+                <h1><i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
+                <hr>
+                <h2>Survey Questions</h2>
+                <h2>Answer these questions to find your perfect match!</h2>
+                <br>
+          
+                <div>
+                  <a href="*"><button type="button" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Home</h4></button></a>
+                </div>
+          
+              </div>
       
-          <h2>Survey Questions</h2>
+          
           <hr>
       
-          <h3><strong>About You</strong></h3>
+          <h3><strong>Tell us about yourself</strong></h3>
           <h4>Name (Required)</h4>
           <input type="text" id="name" class="form-control" required="">
       
-          <h4>Link to Photo Image (Required)</h4>
+          <h4>Your photo(Required)</h4>
           <input type="text" id="photo" class="form-control" required="">
       
           <hr>
-      
+
+          <!-- QUESTIONS -->
+
           <h3><strong>Question 1</strong></h3>
           <h4>Cheese is important to me.</h4>
-          <select class="chosen-select" id="q1">
+          <select class="questionSelect" id="q1">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -47,7 +60,7 @@
       
           <h3><strong>Question 2</strong></h3>
           <h4>I often find myself dreaming of life in a maximum security prison.</h4>
-          <select class="chosen-select" id="q2">
+          <select class="questionSelect" id="q2">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -59,7 +72,7 @@
       
           <h3><strong>Question 3</strong></h3>
           <h4>Clipping toenails is highly over rated.</h4>
-          <select class="chosen-select" id="q3">
+          <select class="questionSelect" id="q3">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -71,7 +84,7 @@
       
           <h3><strong>Question 4</strong></h3>
           <h4>You should always create a ruckus in crowded supermarkets.</h4>
-          <select class="chosen-select" id="q4">
+          <select class="questionSelect" id="q4">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -83,7 +96,7 @@
       
           <h3><strong>Question 5</strong></h3>
           <h4>Lather. Yes. Plenty of lather.</h4>
-          <select class="chosen-select" id="q5">
+          <select class="questionSelect" id="q5">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -95,7 +108,7 @@
       
           <h3><strong>Question 6</strong></h3>
           <h4>Cats have no place in the military.</h4>
-          <select class="chosen-select" id="q6">
+          <select class="questionSelect" id="q6">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -107,7 +120,7 @@
       
           <h3><strong>Question 7</strong></h3>
           <h4>Nutritional yeast tastes nothing like cheese.</h4>
-          <select class="chosen-select" id="q7">
+          <select class="questionSelect" id="q7">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -118,7 +131,7 @@
       
           <h3><strong>Question 8</strong></h3>
           <h4>You're dead inside.</h4>
-          <select class="chosen-select" id="q8">
+          <select class="questionSelect" id="q8">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -129,7 +142,7 @@
       
           <h3><strong>Question 9</strong></h3>
           <h4>The quickest way to a persons heart is to forcibly open the sternum.</h4>
-          <select class="chosen-select" id="q9">
+          <select class="questionSelect" id="q9">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -140,7 +153,7 @@
       
           <h3><strong>Question 10</strong></h3>
           <h4>Dating apps are a total waste of time and money.</h4>
-          <select class="chosen-select" id="q10">
+          <select class="questionSelect" id="q10">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -159,7 +172,7 @@
           <hr>
           <footer class="footer">
             <div class="container">
-              <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+              <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/zcsocal/friend_finder">GitHub Repo</a></p>
             </div>
           </footer>
       
@@ -188,27 +201,7 @@
         </div>
       
         <script type="text/javascript">
-          // Chosen CSS
-          var config = {
-            ".chosen-select": {},
-            ".chosen-select-deselect": {
-              allow_single_deselect: true
-            },
-            ".chosen-select-no-single": {
-              disable_search_threshold: 10
-            },
-            ".chosen-select-no-results": {
-              no_results_text: "Oops, nothing found!"
-            },
-            ".chosen-select-width": {
-              width: "95%"
-            }
-          };
-      
-          for (var selector in config) {
-            $(selector).chosen(config[selector]);
-          };
-      
+         
           // Capture the form inputs
           $("#submit").on("click", function(event) {
             event.preventDefault();
@@ -222,7 +215,7 @@
                 }
               });
       
-              $(".chosen-select").each(function() {
+              $(".questionSelect").each(function() {
       
                 if ($(this).val() === "") {
                   isValid = false;
@@ -260,11 +253,11 @@
       
                 // Show the modal with the best match
                 $("#results-modal").modal("toggle");
-                alert("working");
+                // alert("working");
       
               });
             } else {
-              alert("Please fill out all fields before submitting!");
+              alert("All fields are required if you want to find your best match!");
             }
           });
         </script>
